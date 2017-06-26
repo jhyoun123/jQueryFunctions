@@ -1,0 +1,24 @@
+.box {
+    width: 600px;
+    height: 130px;
+    background-color: grey;
+    text-align: center;
+}
+
+.box > p {
+    display: inline-block
+}
+
+.box > h1 {
+    display: block;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+}
+
+.makeBlue {
+    color: blue;
+}

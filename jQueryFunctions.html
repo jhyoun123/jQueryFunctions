@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My jQuery basic assignment!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#Click button').click(function() {
+                alert("You have used the click feature in jQuery");
+            });
+            $('#Hide').click(function() {
+                $('#p_hideshow').hide();
+            });
+            $('#Show').click(function() {
+                $('#p_hideshow').show();
+            });
+            $('#Toggle button').click(function() {
+                $('#Toggle p').toggle();
+            });
+            $('#slideDown img').hide();
+            $('#slideDown button').click(function() {
+                $('#slideDown img').slideDown('slow');
+            });
+            $('#slideUp button').click(function() {
+                $('#slideUp img').slideUp('slow');
+            });
+            $('#slideToggle img').hide();
+            $('#slideToggle button').click(function() {
+                $('#slideToggle img').slideToggle('slow');
+            });
+            $('#fadeIn img').hide();
+            $('#fadeIn button').click(function() {
+                $('#fadeIn img').fadeIn('slow');
+            });
+            $('#fadeOut button').click(function() {
+                $('#fadeOut img').fadeOut('slow');
+            });
+            $('#addClass button').click(function() {
+                $('#addClass p').addClass('makeBlue');
+            });
+            $("#before button").click(function() {
+				$("#before p").before("This is more text");
+			});
+            $("#after button").click(function() {
+				$("#after p").after("This is more text");
+			});
+            $("#append button").click(function() {
+				$("#append p").append("This is more text");
+			});
+            $("#html button").click(function() {
+				$("#html p").html("Different text");
+			});
+            $("#attr button").click(function() {
+				$("#attr p").attr('class', 'makeBlue');
+			});
+            $("#val button").click(function() {
+				$("#val input").val("This is different text");
+			});
+            $("#text button").click(function() {
+				$("#text p").text("This is different text");
+			});
+        });
+    </script>
+</head>
+<body>
+    <div id="Click" class="box">
+        <h1>Click</h1>
+        <button>Click</button>
+        <p>Click the button to trigger an alert.</p>
+    </div>
+    <div id="Hide/Show" class="box">
+        <h1>Hide/Show</h1>
+        <button id="Hide">Hide</button>
+        <button id="Show">Show</button>
+        <p id="p_hideshow">Click the button to hide/show this p tag.</p>
+    </div>
+    <div id="Toggle" class="box">
+        <h1>Toggle</h1>
+        <button>Toggle</button>
+        <p>Click the button to toggle text on and off.</p>
+    </div>
+    <div id="slideDown" class="box">
+        <h1>slideDown</h1>
+        <button>slideDown</button>
+        <img src="./images/JQuery.png" alt="JQuery" />
+    </div>
+    <div id="slideUp" class="box">
+        <h1>slideUp</h1>
+        <button>slideUp</button>
+        <img src="./images/JQuery.png" alt="JQuery" />
+    </div>
+    <div id="slideToggle" class="box">
+        <h1>slideToggle</h1>
+        <button>slideToggle</button>
+        <img src="./images/JQuery.png" alt="JQuery" />
+    </div>
+    <div id="fadeIn" class="box">
+        <h1>fadeIn</h1>
+        <button>fadeIn</button>
+        <img src="./images/JQuery.png" alt="JQuery" />
+    </div>
+    <div id="fadeOut" class="box">
+        <h1>fadeOut</h1>
+        <button>fadeOut</button>
+        <img src="./images/JQuery.png" alt="JQuery" />
+    </div>
+    <div id="addClass" class="box">
+        <h1>addClass</h1>
+        <button>addClass</button>
+        <p>Click the button to turn this into blue text.</p>
+    </div>
+    <div id="before" class="box">
+        <h1>before</h1>
+        <button>before</button>
+        <p>Click the button to add text before this line.</p>
+    </div>
+    <div id="after" class="box">
+        <h1>after</h1>
+        <button>after</button>
+        <p>Click the button to add text after this line.</p>
+    </div>
+    <div id="append" class="box">
+        <h1>append</h1>
+        <button>append</button>
+        <p>Click the button to add test before this line.</p>
+    </div>
+    <div id="html" class="box">
+        <h1>html</h1>
+        <button>html</button>
+        <p>Click the button to change the html of this line.</p>
+    </div>
+    <div id="attr" class="box">
+        <h1>attr</h1>
+        <button>attr</button>
+        <p>Click the button the change the class attribute to makeBlue</p>
+    </div>
+    <div id="val" class="box">
+        <h1>val</h1>
+        <button>val</button>
+        <input type="text" value="Click button to change text">
+    </div>
+    <div id="text" class="box">
+        <h1>text</h1>
+        <button>text</button>
+        <p>Click the button to change the text of this line.</p>
+    </div>
+    <div id="data" class="box">
+        <h1>data</h1>
+        <button>data</button>
+        <p></p>
+    </div>
+</body>
+</html>
